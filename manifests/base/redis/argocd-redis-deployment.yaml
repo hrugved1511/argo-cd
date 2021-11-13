@@ -18,7 +18,7 @@ spec:
     spec:   
       containers:
       - name: jenkins-example
-        image: 	argocd-repo/image:76
+        image: argocd-repo/image:76
         imagePullPolicy: Always
         ports:
         - containerPort: 6379
