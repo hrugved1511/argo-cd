@@ -15,10 +15,10 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: argocd-redis
-    spec:   
+    spec:
       containers:
       - name: jenkins-example
-        image: argocd-repo/image:76
+        image: '55'
         imagePullPolicy: Always
         ports:
         - containerPort: 6379
