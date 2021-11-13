@@ -15,20 +15,12 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: argocd-redis
-    spec:
-      securityContext:
-        runAsNonRoot: true
-        runAsUser: 999
-      serviceAccountName: argocd-redis        
+    spec:   
       containers:
       - name: jenkins-example
         image: jenkins-example:76
         imagePullPolicy: Always
-        args:
-        - "--save"
-        - ""
-        - "--appendonly"
-        - "no"
+        
         ports:
         - containerPort: 6379
       affinity:
