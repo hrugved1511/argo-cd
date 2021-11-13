@@ -20,10 +20,10 @@ spec:
       - name: jenkins-example
         image: jenkins-example
         imagePullPolicy: Always
-      imagePullSecrets:
-      - name: basic-auth
         ports:
         - containerPort: 6379
+      imagePullSecrets:
+      - name: basic-auth
       affinity:
         podAntiAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
