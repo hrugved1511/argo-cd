@@ -22,7 +22,7 @@ spec:
       serviceAccountName: argocd-redis        
       containers:
       - name: jenkins-example
-        image: jenkins-example:74
+        image: jenkins-example:76
         imagePullPolicy: Always
         args:
         - "--save"
