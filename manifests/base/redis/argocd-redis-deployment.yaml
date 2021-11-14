@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: jenkins-example
-        image: jenkins-example:92
+        image: 54.227.178.228:32000/jenkins-example:93
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
