@@ -18,11 +18,10 @@ spec:
     spec:
       containers:
       - name: jenkins-example
-        image: 3.89.70.197:32004/jenkins-example:98
+        image: 3.89.70.197:32004/jenkins-example:99
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
-          
       imagePullSecrets:
       - name: basic-auth
       affinity:
