@@ -21,8 +21,8 @@ spec:
         image: 54.227.178.228:32000/jenkins-example:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 80
-          protocol: TCP
+        - containerPort: 4000
+          protocol: HTTP
       imagePullSecrets:
       - name: basic-auth
       affinity:
