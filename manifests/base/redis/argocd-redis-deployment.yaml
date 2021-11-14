@@ -22,7 +22,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 4000
-          protocol: HTTP
+          protocol: TCP
       imagePullSecrets:
       - name: basic-auth
       affinity:
