@@ -24,13 +24,5 @@ spec:
         - containerPort: 80
       imagePullSecrets:
       - name: basic-auth2
-      affinity:
-        nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            nodeSelectorTerms
-            - matchExpressions:
-              - key: deploy
-                operator: In
-                values:
-                - nexus
+
          
