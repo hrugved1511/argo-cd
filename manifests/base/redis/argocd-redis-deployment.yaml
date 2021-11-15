@@ -23,7 +23,7 @@ spec:
         ports:
         - containerPort: 6379
       imagePullSecrets:
-      - name: basic-auth
+      - name: basic-auth2
       affinity:
         podAntiAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
